@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
         UserStorage s = UserStorage.getInstance();
 
-        s.addUser(new User("Aleksi", "Oja", "aleksi@tammilukko.fi", "Tuotantotalous"));
+        s.addUser(new User("Aleksi", "Oja", "aleksi@student.lut.fi", "Tuotantotalous"));
     }
 
     public void switchToUserList(View view) {

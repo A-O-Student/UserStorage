@@ -36,12 +36,16 @@ public class AddUserActivity extends AppCompatActivity {
         switch(degreeProgramGrp.getCheckedRadioButtonId()) {
             case R.id.rbLaskennallinenTekniikka:
                 sDegreeProgram = "Laskennallinen tekniikka";
+                break;
             case R.id.rbSahkötekniikka:
                 sDegreeProgram = "Sähkötekniikka";
+                break;
             case R.id.rbTietotekniikka:
                 sDegreeProgram = "Tietotekniikka";
+                break;
             case R.id.rbTuotantotalous:
                 sDegreeProgram = "Tuotantotalous";
+                break;
         }
         UserStorage.getInstance().addUser(new User(sFirstName, sLastName, sEmail, sDegreeProgram));
     }
